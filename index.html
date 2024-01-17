@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main id="contenedor">
+        <h1>Lista de Tareas</h1>
+        
+        <button id="modoOscuro">🌑</button>
+
+        <form id="tareaForm">
+            <label for="tarea">Tarea:</label>
+            <input type="text" id="tarea" name="tarea">
+
+            <button type="submit">Agregar</button>
+        </form>
+    
+        <!-- Elemento HTML donde se mostrarán las tareas -->
+        <ul id="listaTareas"></ul>
+    
+    </main>
+    
+    <script src="./js/compartirTareas.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/modoOscuro.js"></script>
+</body>
+</html>

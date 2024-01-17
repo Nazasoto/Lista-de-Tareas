@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f3f3f3;
+    background-size: 30px 30px;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Agregamos una transición suave para un cambio de color */
+}
+
+#contenedor {
+    text-align: center;
+}
+
+#tareaForm {
+    margin-bottom: 20px;
+}
+
+#listaTareas {
+    list-style: none;
+    padding: 0;
+}
+
+#listaTareas li {
+    margin-bottom: 8px; 
+    min-width: 200px; /* Establece el ancho mínimo deseado */
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+label{
+    font-size: 25px;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #b48e5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #9c752c;
+    transition: all 0.5s;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.205);
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid #928447; /* Color del subrayado */
+    border-radius: 10%; /* Ajusta el valor según tus preferencias */
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #b49d50b9; /* Ajusta el grosor del subrayado cuando está enfocado */
+}
+#listaTareas li {
+    margin-bottom: 8px;
+    min-width: 200px;
+    max-width: 100%;
+    word-wrap: break-word;
+    transition: background-color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color de fondo */
+}
+
+#listaTareas li.agregada {
+    background-color: #d2f4e8; /* Establece el color de fondo para las tareas recién agregadas */
+}
+
+body.modo-oscuro {
+    background-color: #333; /* Fondo oscuro cuando está en modo oscuro */
+    color: #fff; /* Texto claro cuando está en modo oscuro */
+}
+
+#modoOscuro {
+    font-size: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    background-color: transparent; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    padding: 10px; /* Ajusta el tamaño del botón según sea necesario */
+    cursor: pointer;
+}
